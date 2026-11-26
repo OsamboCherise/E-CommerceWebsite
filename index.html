@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="THE ATELIER — Bespoke South African leather goods. Corporate gifting, bulk orders, and unisex luxury handbags. Crafted for those who lead." />
+  <title>THE ATELIER · Bespoke Leather Goods · Corporate & Retail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&family=Italiana&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== ANNOUNCEMENT MARQUEE ===== -->
+  <div class="announcement-bar">
+    <div class="marquee">
+      <span>BESPOKE CORPORATE GIFTING AVAILABLE</span>
+      <span>·</span>
+      <span>FREE DELIVERY NATIONWIDE OVER R2500</span>
+      <span>·</span>
+      <span>HANDCRAFTED IN SOUTH AFRICA</span>
+      <span>·</span>
+      <span>B2B & BULK ORDERS WELCOME</span>
+      <span>·</span>
+      <span>BESPOKE CORPORATE GIFTING AVAILABLE</span>
+      <span>·</span>
+      <span>FREE DELIVERY NATIONWIDE OVER R2500</span>
+      <span>·</span>
+      <span>HANDCRAFTED IN SOUTH AFRICA</span>
+      <span>·</span>
+      <span>B2B & BULK ORDERS WELCOME</span>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+
+      <nav class="nav-left">
+        <a href="#shop">The Collection</a>
+        <a href="#corporate">Corporate</a>
+        <a href="#craft">Craftsmanship</a>
+      </nav>
+
+      <a href="#" class="logo">
+        <span class="logo-main">THE ATELIER</span>
+        <span class="logo-sub">leather · south africa</span>
+      </a>
+
+      <nav class="nav-right">
+        <a href="#story">Our Story</a>
+        <a href="#contact">Contact</a>
+        <button class="icon-btn" id="searchToggle" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="icon-btn cart-toggle" id="cartToggle" aria-label="Open cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+    <nav>
+      <a href="#shop">The Collection</a>
+      <a href="#corporate">Corporate</a>
+      <a href="#craft">Craftsmanship</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <p>crafted for those who lead · 🇿🇦</p>
+    </div>
+  </div>
+
+  <!-- ===== SEARCH OVERLAY ===== -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" id="searchInput" placeholder="search the atelier…" />
+      <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-texture"></div>
+    <div class="container hero-inner">
+      <p class="hero-eyebrow reveal">bespoke leather goods · est. 2021</p>
+      <h1 class="hero-title reveal">
+        <span class="ht-small">crafted</span>
+        <span class="ht-mid">for</span>
+        <span class="ht-big">leaders</span>
+      </h1>
+      <p class="hero-sub reveal">
+        sculptural, unisex leather goods for the modern professional.<br />
+        from single statements to corporate gifting — made in south africa.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#shop" class="btn-primary">explore the collection</a>
+        <a href="#corporate" class="btn-ghost">corporate & bulk <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="hero-meta reveal">
+        <div><strong>B2B</strong><span>bulk orders</span></div>
+        <div class="divider"></div>
+        <div><strong>SA</strong><span>crafted local</span></div>
+        <div class="divider"></div>
+        <div><strong>∞</strong><span>bespoke options</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span>scroll</span><i class="fas fa-chevron-down"></i></div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <section class="trust-bar reveal">
+    <div class="container trust-grid">
+      <div class="trust-item"><i class="fas fa-truck-fast"></i><span>national delivery</span></div>
+      <div class="trust-item"><i class="fas fa-boxes-stacked"></i><span>bulk order discounts</span></div>
+      <div class="trust-item"><i class="fas fa-shield-halved"></i><span>secure checkout</span></div>
+      <div class="trust-item"><i class="fas fa-hand-sparkles"></i><span>handmade in cape town</span></div>
+    </div>
+  </section>
+
+  <!-- ===== SHOP / CATALOGUE ===== -->
+  <section class="shop-section" id="shop">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">the collection</span>
+        <h2 class="section-title">Objects <em>of</em> Intention</h2>
+        <p class="section-desc">
+          each piece is a statement — from the boardroom to the weekend. browse our unisex collection,
+          filter by style, and select your quantity. corporate gifting made seamless.
+        </p>
+      </div>
+
+      <div class="shop-toolbar reveal">
+        <div class="filters" id="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="tote">Totes</button>
+          <button class="filter-btn" data-filter="crossbody">Crossbody</button>
+          <button class="filter-btn" data-filter="shoulder">Shoulder</button>
+          <button class="filter-btn" data-filter="backpack">Backpacks</button>
+          <button class="filter-btn" data-filter="pouch">Pouches</button>
+        </div>
+        <div class="sort-wrap">
+          <label for="sortSelect">sort</label>
+          <select id="sortSelect">
+            <option value="featured">featured</option>
+            <option value="price-asc">price: low → high</option>
+            <option value="price-desc">price: high → low</option>
+            <option value="newest">newest first</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+
+      <div class="shop-footer reveal">
+        <p id="resultsCount">showing 12 pieces</p>
+        <button class="btn-ghost" id="loadMoreBtn">load more <i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOOKBOOK / GALLERY ===== -->
+  <section class="lookbook-section reveal" id="lookbook">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">the atelier in action</span>
+        <h2 class="section-title">Crafted <em>with</em> Purpose</h2>
+        <p class="section-desc">A glimpse into our Cape Town studio — where raw leather becomes a statement.</p>
+      </div>
+      <div class="lookbook-grid" id="lookbookGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CORPORATE / BULK SECTION ===== -->
+  <section class="corporate-section" id="corporate">
+    <div class="corporate-inner">
+      <div class="corporate-image reveal">
+        <div class="corp-img-overlay"></div>
+      </div>
+      <div class="corporate-text reveal">
+        <span class="section-eyebrow">corporate & bulk orders</span>
+        <h2 class="section-title">Elevate <em>Your</em> Corporate Gifting</h2>
+        <p>
+          We partner with businesses across South Africa to create bespoke leather goods for staff, clients, and VIPs. 
+          From branded leather pouches to executive backpacks, our atelier handles small runs and large-scale orders with precision.
+        </p>
+        <ul class="corp-benefits">
+          <li><i class="fas fa-check"></i> Custom logo embossing</li>
+          <li><i class="fas fa-check"></i> Tiered bulk pricing</li>
+          <li><i class="fas fa-check"></i> Dedicated account manager</li>
+          <li><i class="fas fa-check"></i> Nationwide delivery</li>
+        </ul>
+        <a href="#contact" class="btn-primary">request a quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CORPORATE CALCULATOR ===== -->
+  <section class="calculator-section reveal" id="calculator">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">instant estimate</span>
+        <h2 class="section-title">Bulk <em>Order</em> Calculator</h2>
+        <p class="section-desc">Estimate your corporate gifting budget. Final quotes are customised based on embossing and leather choice.</p>
+      </div>
+      <div class="calculator-box">
+        <div class="calc-row">
+          <div class="calc-group">
+            <label for="calcProduct">Select Item</label>
+            <select id="calcProduct">
+              <!-- Populated by JS -->
+            </select>
+          </div>
+          <div class="calc-group">
+            <label for="calcQty">Quantity (Min. 10)</label>
+            <input type="number" id="calcQty" value="10" min="10" step="1" />
+          </div>
+        </div>
+        <div class="calc-result">
+          <span>Estimated Total:</span>
+          <strong id="calcTotal">R 0.00</strong>
+        </div>
+        <p class="calc-note">* Discount applied for bulk orders (10+). Final pricing excludes custom embossing fees.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORY / EDITORIAL ===== -->
+  <section class="story-section" id="story">
+    <div class="container story-grid">
+      <div class="story-image reveal">
+        <div class="story-img-inner"></div>
+        <div class="story-img-badge">est. 2021 · cape town</div>
+      </div>
+      <div class="story-text reveal">
+        <span class="section-eyebrow">our story</span>
+        <h2 class="section-title">Born <em>from</em> the Boardroom <em>and</em> the Weekend</h2>
+        <p>
+          THE ATELIER was born in Johannesburg — in the space between meetings and midnight.
+          we design leather goods for those who don't ask for permission. structured totes for the professional
+          closing deals. slinky clutches for the night that follows.
+        </p>
+        <p>
+          every piece is cut from full-grain South African leather, hand-finished with solid brass hardware, 
+          and lined with intention. no logos screaming for attention — only quiet, brutal confidence.
+        </p>
+        <div class="story-stats">
+          <div><strong>100%</strong><span>SA made</span></div>
+          <div><strong>72h</strong><span>made to order</span></div>
+          <div><strong>∞</strong><span>custom options</span></div>
+        </div>
+        <a href="#craft" class="btn-primary">discover the craft</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CRAFT / FEATURES ===== -->
+  <section class="craft-section" id="craft">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">craftsmanship</span>
+        <h2 class="section-title">Made <em>to</em> Outlive Trends</h2>
+      </div>
+      <div class="craft-grid">
+        <div class="craft-card reveal">
+          <i class="fas fa-hand-sparkles"></i>
+          <h3>Hand-Finished</h3>
+          <p>Each piece is cut, stitched, and burnished by artisans in our Cape Town atelier. No factory lines. No shortcuts.</p>
+        </div>
+        <div class="craft-card reveal" style="transition-delay: 0.1s;">
+          <i class="fas fa-crown"></i>
+          <h3>Solid Brass Hardware</h3>
+          <p>Our signature solid brass zips, clasps, and D-rings — unisex, durable, and designed to patina beautifully.</p>
+        </div>
+        <div class="craft-card reveal" style="transition-delay: 0.2s;">
+          <i class="fas fa-leaf"></i>
+          <h3>Responsible Leather</h3>
+          <p>Full-grain leather, ethically sourced from local South African tanneries. Built to age with you.</p>
+        </div>
+        <div class="craft-card reveal" style="transition-delay: 0.3s;">
+          <i class="fas fa-gem"></i>
+          <h3>Custom Lining</h3>
+          <p>Every interior is lined with intention — choose from our signature forest green or bespoke corporate colour.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials-section" id="journal">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">the word on the street</span>
+        <h2 class="section-title">Trusted <em>by</em> Professionals</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial reveal">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"We ordered 50 custom pouches for our executive team. The quality was exceptional, and the bespoke embossing was flawless. Our staff loved them."</p>
+          <span class="testimonial-author">— Thabo M., Corporate Client, Johannesburg</span>
+        </div>
+        <div class="testimonial reveal" style="transition-delay: 0.1s;">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"I bought the red crossbody for myself and the black backpack for my husband. The leather is buttery soft and the hardware is solid. We both use them daily."</p>
+          <span class="testimonial-author">— Lerato K., Retail Client, Cape Town</span>
+        </div>
+        <div class="testimonial reveal" style="transition-delay: 0.2s;">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"The unisex tote is the perfect balance of form and function. It fits my laptop, and it looks refined enough for board meetings. I'm a client for life."</p>
+          <span class="testimonial-author">— Zinhle N., Durban</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / NEWSLETTER ===== -->
+  <section class="newsletter-section" id="contact">
+    <div class="container newsletter-inner">
+      <div class="newsletter-text reveal">
+        <span class="section-eyebrow">get in touch</span>
+        <h2 class="section-title">Let's <em>Talk</em> Business</h2>
+        <p>Whether you're inquiring about a single purchase or a corporate bulk order, our team is ready. 
+          Drop your email below for a quote, or to join our private client list.</p>
+      </div>
+      <form class="newsletter-form reveal" id="contactForm">
+        <input type="text" id="contactName" placeholder="your name / company" required />
+        <input type="email" id="contactEmail" placeholder="your email address" required />
+        <textarea id="contactMsg" placeholder="single order or bulk inquiry?" rows="3" required></textarea>
+        <button type="submit" class="btn-primary">send inquiry</button>
+        <p class="newsletter-note" id="contactNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand-col reveal">
+        <div class="footer-logo">THE ATELIER</div>
+        <p class="footer-tag">leather goods · south africa.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col reveal" style="transition-delay: 0.1s;">
+        <h4>Shop</h4>
+        <a href="#shop">All Products</a>
+        <a href="#shop">Totes</a>
+        <a href="#shop">Backpacks</a>
+        <a href="#shop">Pouches</a>
+      </div>
+      <div class="footer-col reveal" style="transition-delay: 0.2s;">
+        <h4>Corporate</h4>
+        <a href="#corporate">Bulk Orders</a>
+        <a href="#contact">Request Quote</a>
+        <a href="#calculator">Bulk Calculator</a>
+        <a href="#">B2B Login</a>
+      </div>
+      <div class="footer-col reveal" style="transition-delay: 0.3s;">
+        <h4>Company</h4>
+        <a href="#story">Our Story</a>
+        <a href="#craft">Craftsmanship</a>
+        <a href="#contact">Contact</a>
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+    <div class="footer-bottom reveal">
+      <p>© 2026 THE ATELIER · proudly south african 🇿🇦 · all rights reserved</p>
+      <p>designed & handmade in cape town</p>
+    </div>
+  </footer>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>your selection <span id="cartItemCount">(0)</span></h3>
+      <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <p class="cart-empty">your selection is empty.<br />time to make a statement.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row"><span>subtotal</span><span id="cartSubtotal">R 0.00</span></div>
+      <p class="cart-shipping-note">bulk discounts applied at checkout · free over R2500</p>
+      <button class="btn-primary btn-block" id="checkoutBtn">proceed to retail checkout <i class="fas fa-lock"></i></button>
+      <button class="btn-ghost btn-block" id="bulkQuoteBtn" style="margin-top: 0.5rem;">request bulk quote</button>
+    </div>
+  </aside>
+
+  <!-- ===== QUICK VIEW MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="quickview" id="quickview">
+    <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+    <div class="quickview-grid">
+      <div class="quickview-image" id="qvImage"></div>
+      <div class="quickview-info">
+        <span class="section-eyebrow" id="qvCategory">handbag</span>
+        <h3 id="qvName">piece name</h3>
+        <p class="quickview-price" id="qvPrice">R 0.00</p>
+        <p class="quickview-desc" id="qvDesc"></p>
+        <div class="quickview-actions">
+          <div class="qty-selector">
+            <button id="qvMinus">−</button>
+            <span id="qvQty">1</span>
+            <button id="qvPlus">+</button>
+          </div>
+          <button class="btn-primary" id="qvAddToCart">add to selection</button>
+        </div>
+        <div class="quickview-meta">
+          <p><i class="fas fa-truck"></i> free shipping over R2500</p>
+          <p><i class="fas fa-undo"></i> 30-day returns</p>
+          <p><i class="fas fa-stamp"></i> custom embossing available</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LOOKBOOK MODAL ===== -->
+  <div class="modal-overlay" id="lookbookModalOverlay"></div>
+  <div class="lookbook-modal" id="lookbookModal">
+    <button class="modal-close" id="lookbookModalClose"><i class="fas fa-times"></i></button>
+    <div class="lookbook-modal-content" id="lookbookModalContent">
+      <!-- Dynamic content here -->
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
